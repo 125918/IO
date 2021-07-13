@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Color;
+import java.awt.SystemColor;
 
 public class PanelSnake extends JPanel 
 {
@@ -19,28 +20,23 @@ public class PanelSnake extends JPanel
 	 */
 	public PanelSnake() 
 	{
-		setBackground(Color.WHITE);
+		setBackground(SystemColor.controlHighlight);
 		setBounds(0, 0, 496, 533);
 		setLayout(null);
 		//setVisible(true);
 		
-		JLabel lblNewLabel = new JLabel("Snake");
+		JLabel lblNewLabel = new JLabel("Panel brygadzisty");
 		lblNewLabel.setBackground(Color.WHITE);
-		lblNewLabel.setFont(new Font("MV Boli", Font.BOLD, 40));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel.setBounds(10, 47, 273, 50);
+		lblNewLabel.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 25));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(10, 80, 476, 50);
 		add(lblNewLabel);
-		
-		JLabel lblNewLabel_1 = new JLabel("");
 		ImageIcon imageIcon = new ImageIcon("C:\\Users\\katar\\Desktop\\Java\\LoginSystem\\snake.png");
 		Image image = imageIcon.getImage();
 		Image newImage = image.getScaledInstance(346, 287, ABORT);
 		imageIcon = new ImageIcon(newImage);
-		lblNewLabel_1.setIcon(imageIcon);
-		lblNewLabel_1.setBounds(79, 108, 346, 287);
-		add(lblNewLabel_1);
 		
-		JButton btnNewButton = new JButton("Start the game");
+		JButton btnNewButton = new JButton("Pobierz list\u0119 pracownik\u00F3w");
 		btnNewButton.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -52,8 +48,23 @@ public class PanelSnake extends JPanel
 				}
 			}
 		});
-		btnNewButton.setFont(new Font("MV Boli", Font.BOLD, 15));
-		btnNewButton.setBounds(261, 441, 164, 44);
+		btnNewButton.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 15));
+		btnNewButton.setBounds(113, 164, 258, 44);
 		add(btnNewButton);
+		
+		JButton btnWylijProtok = new JButton("Wy\u015Blij protok\u00F3\u0142");
+		btnWylijProtok.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 15));
+		btnWylijProtok.setBounds(113, 399, 258, 44);
+		add(btnWylijProtok);
+		
+		JButton btnNewButton_1_1 = new JButton("Wype\u0142nij protok\u00F3\u0142");
+		btnNewButton_1_1.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 15));
+		btnNewButton_1_1.setBounds(113, 237, 258, 44);
+		add(btnNewButton_1_1);
+		
+		JButton btnNewButton_1_2 = new JButton("Edytuj protok\u00F3\u0142");
+		btnNewButton_1_2.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 15));
+		btnNewButton_1_2.setBounds(113, 320, 258, 44);
+		add(btnNewButton_1_2);
 	}
 }

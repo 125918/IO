@@ -28,19 +28,19 @@ public class PanelTicTacToe extends JPanel
 	 */
 	public PanelTicTacToe() 
 	{
-		setBackground(Color.WHITE);
+		setBackground(new Color(227, 227, 227));
 		setForeground(Color.WHITE);
 		setBounds(0, 0, 496, 545);
 		setLayout(null);
 		//setVisible(true);
 		
-		JLabel lblNewLabel = new JLabel("Tic Tac Toe");
-		lblNewLabel.setFont(new Font("MV Boli", Font.BOLD, 40));
-		lblNewLabel.setHorizontalAlignment(SwingConstants.LEFT);
-		lblNewLabel.setBounds(10, 47, 273, 50);
+		JLabel lblNewLabel = new JLabel("Panel pracownika administracji");
+		lblNewLabel.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 25));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(10, 78, 476, 50);
 		add(lblNewLabel);
 		
-		JButton btnNewButton = new JButton("Start the game");
+		JButton btnNewButton = new JButton("Drukuj raport");
 		btnNewButton.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
@@ -51,17 +51,14 @@ public class PanelTicTacToe extends JPanel
 				}
 			}
 		});
-		btnNewButton.setFont(new Font("MV Boli", Font.BOLD, 15));
-		btnNewButton.setBounds(261, 441, 164, 44);
+		btnNewButton.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 15));
+		btnNewButton.setBounds(157, 204, 164, 44);
 		add(btnNewButton);
 		
-		JLabel lblNewLabel_1 = new JLabel("");
-		lblNewLabel_1.setForeground(Color.LIGHT_GRAY);
-		lblNewLabel_1.setBackground(Color.LIGHT_GRAY);
-		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_1.setIcon(new ImageIcon("C:\\Users\\katar\\Desktop\\Java\\LoginSystem\\TicTacToe1.png"));
-		lblNewLabel_1.setBounds(61, 73, 359, 362);
-		add(lblNewLabel_1);
+		JButton btnWylijPrzypomnienie = new JButton("Wy\u015Blij przypomnienie");
+		btnWylijPrzypomnienie.setFont(new Font("Verdana", Font.BOLD | Font.ITALIC, 15));
+		btnWylijPrzypomnienie.setBounds(124, 305, 230, 44);
+		add(btnWylijPrzypomnienie);
 		
 		
 		

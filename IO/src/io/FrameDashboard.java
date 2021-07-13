@@ -248,32 +248,32 @@ public class FrameDashboard extends JFrame
 		contentPane.add(paneMainContent);
 		paneMainContent.setLayout(null);
 		
-		JLabel lblNewLabel_5 = new JLabel("Panel brygadzisty");
-		lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel_5.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 30));
-		lblNewLabel_5.setForeground(Color.BLACK);
-		lblNewLabel_5.setBounds(20, 40, 464, 49);
-		paneMainContent.add(lblNewLabel_5);
-		
-		JButton btnNewButton = new JButton("Pobierz list\u0119 pracownik\u00F3w");
-		btnNewButton.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
-		btnNewButton.setBounds(128, 188, 238, 49);
-		paneMainContent.add(btnNewButton);
-		
-		JButton btnWylijPrzypomnienie = new JButton("Edytuj protok\u00F3\u0142");
-		btnWylijPrzypomnienie.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
-		btnWylijPrzypomnienie.setBounds(128, 335, 238, 49);
-		paneMainContent.add(btnWylijPrzypomnienie);
-		
-		JButton btnWypenijRaport = new JButton("Wype\u0142nij protok\u00F3\u0142");
-		btnWypenijRaport.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
-		btnWypenijRaport.setBounds(128, 259, 238, 49);
-		paneMainContent.add(btnWypenijRaport);
-		
-		JButton btnWylijProtok = new JButton("Wy\u015Blij protok\u00F3\u0142");
-		btnWylijProtok.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
-		btnWylijProtok.setBounds(128, 408, 238, 49);
-		paneMainContent.add(btnWylijProtok);
+//		JLabel lblNewLabel_5 = new JLabel("Panel brygadzisty");
+//		lblNewLabel_5.setHorizontalAlignment(SwingConstants.CENTER);
+//		lblNewLabel_5.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 30));
+//		lblNewLabel_5.setForeground(Color.BLACK);
+//		lblNewLabel_5.setBounds(20, 40, 464, 49);
+//		paneMainContent.add(lblNewLabel_5);
+//		
+//		JButton btnNewButton = new JButton("Pobierz list\u0119 pracownik\u00F3w");
+//		btnNewButton.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
+//		btnNewButton.setBounds(128, 188, 238, 49);
+//		paneMainContent.add(btnNewButton);
+//		
+//		JButton btnWylijPrzypomnienie = new JButton("Edytuj protok\u00F3\u0142");
+//		btnWylijPrzypomnienie.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
+//		btnWylijPrzypomnienie.setBounds(128, 335, 238, 49);
+//		paneMainContent.add(btnWylijPrzypomnienie);
+//		
+//		JButton btnWypenijRaport = new JButton("Wype\u0142nij protok\u00F3\u0142");
+//		btnWypenijRaport.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
+//		btnWypenijRaport.setBounds(128, 259, 238, 49);
+//		paneMainContent.add(btnWypenijRaport);
+//		
+//		JButton btnWylijProtok = new JButton("Wy\u015Blij protok\u00F3\u0142");
+//		btnWylijProtok.setFont(new Font("Century Gothic", Font.BOLD | Font.ITALIC, 15));
+//		btnWylijProtok.setBounds(128, 408, 238, 49);
+//		paneMainContent.add(btnWylijProtok);
 		
 		paneMainContent.add(panelHome);
 		paneMainContent.add(panelTicTacToe);

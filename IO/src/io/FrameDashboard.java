@@ -27,9 +27,9 @@ public class FrameDashboard extends JFrame
 	private JPanel contentPane;
 
 	private PanelHome panelHome;
-	private PanelTicTacToe panelTicTacToe;
-	private PanelSnake panelSnake;
-	private PanelPingPong panelPingPong;
+	private Panel1 panelTicTacToe;
+	private Panel2 panelSnake;
+	private Panel3 panelPingPong;
 	
 	
 	
@@ -65,9 +65,9 @@ public class FrameDashboard extends JFrame
 		contentPane.setLayout(null);
 		
 		panelHome = new PanelHome();
-		panelTicTacToe = new PanelTicTacToe();
-		panelSnake = new PanelSnake();
-		panelPingPong = new PanelPingPong();
+		panelTicTacToe = new Panel1();
+		panelSnake = new Panel2();
+		panelPingPong = new Panel3();
 		
 		
 		

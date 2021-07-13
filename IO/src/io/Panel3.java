@@ -10,13 +10,13 @@ import java.awt.Color;
 import javax.swing.JButton;
 import java.awt.SystemColor;
 
-public class PanelPingPong extends JPanel 
+public class Panel3 extends JPanel 
 {
 
 	/**
 	 * Create the panel.
 	 */
-	public PanelPingPong() 
+	public Panel3() 
 	{
 		setBackground(SystemColor.controlHighlight);
 		setBounds(0, 0, 496, 537);

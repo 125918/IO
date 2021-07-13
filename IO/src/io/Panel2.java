@@ -1,24 +1,31 @@
 package io;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.Color;
 import java.awt.SystemColor;
 
-public class PanelSnake extends JPanel 
+public class Panel2 extends JPanel 
 {
 
-	/**
-	 * Create the panel.
-	 */
-	public PanelSnake() 
+	private static String connectionUrl = "jdbc:sqlserver://DESKTOP-IFL6H2E;database=Test1;integratedSecurity=true;";
+	private static String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+	private static Connection connection;
+	
+	public Panel2() 
 	{
 		setBackground(SystemColor.controlHighlight);
 		setBounds(0, 0, 496, 533);
@@ -43,7 +50,43 @@ public class PanelSnake extends JPanel
 			{
 				if(e.getSource() == btnNewButton) 
 				{
-//					SnakeGameFrame frame = new SnakeGameFrame();
+					
+				
+					try {
+						Class.forName(driverName);
+					} catch (ClassNotFoundException e2) {
+						// TODO Auto-generated catch block
+						e2.printStackTrace();
+					}
+					
+				
+					try {
+						Connection connection = DriverManager.getConnection(connectionUrl);
+					} catch (SQLException e2) {
+						// TODO Auto-generated catch block
+						e2.printStackTrace();
+					}
+					JOptionPane.showMessageDialog(null, "Connected");
+					
+					try (Connection connection = DriverManager.getConnection(connectionUrl); Statement stmt = connection.createStatement();)
+					{
+						String SQL = "SELECT * FROM tbl_Persons";
+						ResultSet rs = stmt.executeQuery(SQL);
+						
+						//Iterate through the data in the result set and display it
+						while(rs.next()) 
+						{
+							System.out.println(rs.getString("FirstName") + " "+ rs.getString("LastName"));
+						}
+					}
+					//Handle any errors that may have occured
+					catch(SQLException e1) 
+					{
+						e1.printStackTrace();
+					}
+					
+					
+					
 					
 				}
 			}

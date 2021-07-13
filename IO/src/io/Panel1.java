@@ -20,13 +20,13 @@ import javax.swing.ImageIcon;
 import java.awt.SystemColor;
 import javax.swing.UIManager;
 
-public class PanelTicTacToe extends JPanel 
+public class Panel1 extends JPanel 
 {
 
 	/**
 	 * Create the panel.
 	 */
-	public PanelTicTacToe() 
+	public Panel1() 
 	{
 		setBackground(new Color(227, 227, 227));
 		setForeground(Color.WHITE);
